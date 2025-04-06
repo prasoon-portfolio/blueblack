@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon" />
+    <title>Blue Black</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body
+    class="w-full h-screen font-sans text-white bg-gradient-to-r from-black to-blue-600"
+  >
+    <!-- HOME SECTION -->
+    <div class="relative w-full p-4 md:p-6">
+      <!-- background image -->
+      <div
+        class="absolute inset-0 bg-no-repeat opacity-20"
+        style="
+          background-image: url('./assets/hero.png');
+          background-position: -100px center;
+          background-size: 600px;
+        "
+      ></div>
+
+      <!-- a blur layer on background -->
+      <div class="absolute inset-0 bg-blue-500 opacity-20"></div>
+
+      <!-- contents on background -->
+      <div class="relative z-10">
+        <!-- navigation bar -->
+        <header class="flex items-center justify-between px-6 md:px-8 py-2 mb-6">
+          <div class="text-xl font-boad">
+            <img src="./assets/logo.png" alt="logo" class="w-10" /></div>
+          <div class="hidden md:flex gap-[30px]" id="menu">
+            <a class="hover:text-black" href="#">Home</a>
+            <a class="hover:text-black" href="#">About us</a>
+            <a class="hover:text-black" href="#">Projects</a>
+            <a class="hover:text-black" href="#">Out team</a>
+            <a class="hover:text-black" href="#">Contact</a>
+          </div>
+          <!-- menu icon -->
+          <span class="md:hidden block" id="menu-icon"
+            ><i id="icon" class="fa-solid fa-bars"></i
+          ></span>
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+        </header>
+
+        <!-- HERO SECTION -->
+        <section
+          class="flex flex-col flex-col-reverse md:flex-row items-center justify-between px-4 md:px-6 py-4 space-y-6 md:space-y-0"
+        >
+          <!-- left area -->
+          <div class="md:w-1/2 text-center space-y-4 md:space-y-4 md:text-left">
+            <h1 class="text-3xl md:text-7xl font-extrabold text-blue-700">
+              Blue Black.
+            </h1>
+            <p class="text-lg tracking-wider text-gray-500">Codelevate Internship Project.</p>
+            <p class="lorem-text text-sm md:text-lg text-gray-300 md:w-[470px]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              fugit dolorum nemo, natus praesentium aut, aspernatur dolore
+              consequuntur iste accusamus corporis non, id impedit
+              voluptas?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <!-- social icons -->
+            <div
+              class="flex justify-center md:justify-start gap-12 mt-12 text-center md:text-start w-[70%] mx-auto md:ml-0"
+            >
+              <div class="cursor-pointer">
+                <i class="transition all duration-300 text-3xl fa-brands fa-linkedin"></i>
+              </div>
+              <div class="cursor-pointer">
+                <i class="transition all duration-300 text-3xl fa-brands fa-square-twitter"></i>
+              </div>
+              <div class="cursor-pointer">
+                <i class="transition all duration-300 text-3xl fa-brands fa-square-github"></i>
+              </div>
+            </div>
+            <div
+              class="w-[70%] mt-12 flex justify-center md:justify-start mx-auto md:ml-0"
+            >
+              <button class="py-2 px-6 tracking-wider rounded-full bg-orange-500 hover:bg-orange-600 cursor-pointer transition all duration-300">Join us</button>
+            </div>
+          </div>
+          <!-- right area -->
+          <div class="relative hidden md:flex justify-center md:w-1/2">
+            <img
+              src="./assets/hero.png"
+              alt="hero"
+              class="w-7/8 md:w-full md:mt-12 transform transition duration-500 ease-in-out animation-hartbeat"
+            />
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- ABOUT US SECTION -->
+    <section class="relative w-full p-4 md:p-6">
+      <!-- background image -->
+      <div class="absolute inset-0 bg-no-repeat opacity-20"></div>
+
+      <!-- a blur layer on background -->
+      <div class="absolute inset-0 bg-blue-500 opacity-20"></div>
+
+      <!-- contents on background -->
+      <div class="relative z-10">
+        <!-- left area -->
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <div class="w-1/2">
+            <img src="./assets/about.png" alt="about" />
+          </div>
+          <!-- right area -->
+          <div class="md:w-1/2 w-[90%] space-y-4">
+            <h4 class="text-[18px] text-gray-300 font-semibold tracking-widest">
+              About us
+            </h4>
+            <h1 class="text-5xl font-[700] font-[Dosis]">
+              A House of Creative & Intelligence.
+            </h1>
+            <p class="text-sm text-gray-200 leading-relaxed tracking-widest">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eum
+              unde doloribus! Eveniet, quae quam. Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Quam veniam, odit corporis maiores
+              dignissimos illo?
+            </p>
+            <div class="flex gap-6">
+              <button
+                class="rounded hover:bg-white hover:text-black transition-color duration-300 ease-in-out cursor-pointer bg-black shadow py-2 px-6 tracking-wider border-0 outline-0"
+              >
+                Our team
+              </button>
+              <button
+                class="rounded hover:bg-white hover:text-black transition-color duration-300 ease-in-out cursor-pointer bg-black shadow py-2 px-6 tracking-wider border-0 outline-0"
+              >
+                Learn more
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="relative w-full p-4 md:p-6">
+      <!-- background image -->
+      <div class="absolute inset-0 bg-no-repeat opacity-20"></div>
+
+      <!-- a blur layer on background -->
+      <div class="absolute inset-0 bg-blue-500 opacity-20"></div>
+
+      <!-- contents on background -->
+      <div class="relative z-10 py-4 mx-auto flex flex-col gap-[50px]">
+        <div >
+          <h1 class="mt-12 text-center text-5xl font-[Dosis]">--Our Projects--</h1>
+          <!-- project 1 -->
+          <div class="mt-12 flex items-center bg-blue-900 p-2 rounded-lg">
+            <div
+              class="items-center flex flex-col flex-col-reverse justify-center md:flex-row md:justify-between items-center"
+            >
+              <div
+                class="md:w-1/2 text-center md:text-end mr-6 mt-6 flex flex-col gap-6"
+              >
+              <div class="md:w-[80%] mx-auto">
+                <h3 class="mb-6 text-2xl tracking-wider">Project 1</h3>
+                <p class="mb-6 text-sm tracking-wider text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptate recusandae aut amet illum doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, assumenda amet. Officiis aliquid a commodi ullam velit ipsam neque veritatis!</p>
+                <div class="w-full text-end mb-6">
+                  <button class="bg-black py-2 px-4 rounded text-gray-200">Read more</button>
+                </div>
+              </div>
+              </div>
+              <div class="md:w-1/2">
+                <img
+                  class="w-[100%] rounded-lg"
+                  src="./assets/project01.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <!-- project 2 -->
+          <div class="mt-12 flex items-center bg-blue-900 p-2 rounded-lg">
+            <div
+              class="items-center flex flex-col justify-center md:flex-row md:justify-between items-center"
+            >
+              <div class="md:w-1/2">
+                <img
+                  class="w-[100%] rounded-lg"
+                  src="./assets/project02.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="md:w-1/2 text-center md:text-end mr-6 mt-6 flex flex-col gap-6"
+              >
+                <div class="md:w-[80%] mx-auto">
+                  <h3 class="mb-6 text-2xl tracking-wider">Project 2</h3>
+                  <p class="mb-6 text-sm tracking-wider text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptate recusandae aut amet illum doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, assumenda amet. Officiis aliquid a commodi ullam velit ipsam neque veritatis!</p>
+                  <div class="w-full text-end mb-6">
+                    <button class="bg-black py-2 px-4 rounded text-gray-200">Read more</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- project 3 -->
+          <div class="mt-12 flex items-center bg-blue-900 p-2 rounded-lg">
+            <div
+              class="items-center flex flex-col flex-col-reverse justify-center md:flex-row md:justify-between items-center"
+            >
+              <div
+                class="md:w-1/2 text-center md:text-end mr-6 mt-6 flex flex-col gap-6"
+              >
+              <div class="md:w-[80%] mx-auto">
+                <h3 class="mb-6 text-2xl tracking-wider">Project 3</h3>
+                <p class="mb-6 text-sm tracking-wider text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptate recusandae aut amet illum doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, assumenda amet. Officiis aliquid a commodi ullam velit ipsam neque veritatis!</p>
+                <div class="w-full text-end mb-6">
+                  <button class="bg-black py-2 px-4 rounded text-gray-200">Read more</button>
+                </div>
+              </div>
+              </div>
+              <div class="md:w-1/2">
+                <img
+                  class="w-[100%] rounded-lg"
+                  src="./assets/project03.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR TEAM SECTION -->
+    <section class="relative w-full p-4 md:p-6">
+      <!-- background image -->
+      <div class="absolute inset-0 bg-no-repeat opacity-20"></div>
+
+      <!-- a blur layer on background -->
+      <div class="absolute inset-0 bg-blue-500 opacity-20"></div>
+
+      <!-- contents on background -->
+      <div class="relative z-10">
+        <h1 class="text-5xl font-[Dosis] text-center mb-6">--Our team--</h1>
+        <div class="flex flex-col gap-6 items-center md:flex-row md:justify-between md:w-[80%] mx-auto">
+          <!-- member 1 -->
+          <div class="card bg-blue-900 p-6 text-center md:w-1/4 rounded-3xl">
+            <div class="h-[300px] w-[300px] md:w-[150px] md:h-[150px] rounded-full overflow-hidden mx-auto">
+              <img src="./assets/member01.jpg" alt="" class="mx-auto w-full h-full"/>
+            </div>
+            <div class="mt-6">
+              <h3 class="font-semibold tracking-wider text-xl">Name</h3>
+              <p class="tracking-widest font-extralight text-sm text-gray-300">designation</p>
+              <div class="links flex justify-between px-2 text-3xl mt-12">
+                <div class="cursor-pointer hover:text-black transition duration-300 all"><i class="fa-brands fa-square-twitter"></i></div>
+                <div class="cursor-pointer hover:text-black transition duration-300 all"><i class="fa-brands fa-linkedin"></i></div>
+                <div class="cursor-pointer hover:text-black transition duration-300 all"><i class="fa-brands fa-square-github"></i></div>
+                <div class="cursor-pointer hover:text-black transition duration-300 all"><i class="fa-brands fa-square-facebook"></i></div>
+              </div>
+            </div>
+        </div>
+          <!-- member 2 -->
+          <div class="card bg-blue-900 p-6 text-center md:w-1/4 rounded-3xl">
+            <div class="h-[300px] w-[300px] md:w-[150px] md:h-[150px] rounded-full overflow-hidden mx-auto">
+              <img src="./assets/member02.jpg" alt="" class="mx-auto w-full h-full"/>
+            </div>
+            <div class="mt-6">
+              <h3 class="font-semibold tracking-wider text-xl">Name</h3>
+              <p class="tracking-widest font-extralight text-sm text-gray-300">designation</p>
+              <div class="links flex justify-between px-2 text-3xl mt-12">
+                <div class="cursor-pointer hover:text-black transition duration-300 all"><i class="fa-brands fa-square-twitter"></i></div>
+                <div class="cursor-pointer hover:text-black transition duration-300 all"><i class="fa-brands fa-linkedin"></i></div>
+                <div class="cursor-pointer hover:text-black transition duration-300 all"><i class="fa-brands fa-square-github"></i></div>
+                <div class="cursor-pointer hover:text-black transition duration-300 all"><i class="fa-brands fa-square-facebook"></i></div>
+              </div>
+            </div>
+        </div>
+          <!-- member 3 -->
+          <div class="card bg-blue-900 p-6 text-center md:w-1/4 rounded-3xl">
+            <div class="h-[300px] w-[300px] md:w-[150px] md:h-[150px] rounded-full overflow-hidden mx-auto">
+              <img src="./assets/member03.jpg" alt="" class="mx-auto w-full h-full"/>
+            </div>
+            <div class="mt-6">
+              <h3 class="font-semibold tracking-wider text-xl">Name</h3>
+              <p class="tracking-widest font-extralight text-sm text-gray-300">designation</p>
+              <div class="links flex justify-between px-2 text-3xl mt-12">
+                <div class="cursor-pointer hover:text-black transition duration-300 all"><i class="fa-brands fa-square-twitter"></i></div>
+                <div class="cursor-pointer hover:text-black transition duration-300 all"><i class="fa-brands fa-linkedin"></i></div>
+                <div class="cursor-pointer hover:text-black transition duration-300 all"><i class="fa-brands fa-square-github"></i></div>
+                <div class="cursor-pointer hover:text-black transition duration-300 all"><i class="fa-brands fa-square-facebook"></i></div>
+              </div>
+            </div>
+        </div>
+          <!-- member 4 -->
+          <div class="card bg-blue-900 p-6 text-center md:w-1/4 rounded-3xl">
+            <div class="h-[300px] w-[300px] md:w-[150px] md:h-[150px] rounded-full overflow-hidden mx-auto">
+              <img src="./assets/member04.jpg" alt="" class="mx-auto w-full h-full"/>
+            </div>
+            <div class="mt-6">
+              <h3 class="font-semibold tracking-wider text-xl">Name</h3>
+              <p class="tracking-widest font-extralight text-sm text-gray-300">designation</p>
+              <div class="links flex justify-between px-2 text-3xl mt-12">
+                <div class="cursor-pointer hover:text-black transition duration-300 all"><i class="fa-brands fa-square-twitter"></i></div>
+                <div class="cursor-pointer hover:text-black transition duration-300 all"><i class="fa-brands fa-linkedin"></i></div>
+                <div class="cursor-pointer hover:text-black transition duration-300 all"><i class="fa-brands fa-square-github"></i></div>
+                <div class="cursor-pointer hover:text-black transition duration-300 all"><i class="fa-brands fa-square-facebook"></i></div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT US SECTION -->
+    <section class="relative w-full py-6 px-4 md:p-6">
+      <!-- background image -->
+      <div class="absolute inset-0 bg-no-repeat opacity-20"></div>
+
+      <!-- a blur layer on background -->
+      <div class="absolute inset-0 bg-blue-500 opacity-20"></div>
+
+      <!-- contents on background -->
+      <div class="relative z-10">
+        <div class="mt-12 mb-12">
+          <h1 class=" text-center text-5xl font-[Dosis] mb-6">--Contact us--</h1>
+        </div>
+        <div class="flex md:gap-6 justify-between items-center">
+          <div class="hidden md:block w-1/2">
+            <img class="w-full rounded-3xl" src="./assets/contact_us.jpeg" alt="">
+          </div>
+          <form class="md:w-1/2 w-full flex flex-col gap-3">
+            <input class="bg-gray-900 border border-orange-500 w-full rounded-lg px-6 py-2" type="text" placeholder="Your name">
+            <input class="bg-gray-900 border border-orange-500 w-full rounded-lg px-6 py-2" type="text" placeholder="Email Id">
+            <input class="bg-gray-900 border border-orange-500 w-full rounded-lg px-6 py-2" type="text" placeholder="Phone No.">
+            <textarea name="" id="" rows="5" placeholder="Message..." class="bg-gray-900 border border-orange-500 w-full rounded-xl px-6 py-2"></textarea>
+            <div class="w-full text-end">
+              <button class="py-2 w-full md:w-[150px] bg-orange-700 rounded-lg tracking-wider shadow cursor-pointer transition all duration-300 hover:bg-orange-600">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="p-6">
+      <div class="mt-6 flex flex-col md:flex-row md:justify-between gap-6 text-slate-500">
+        <!-- branding -->
+        <div class="text-center md:text-start">
+          <h1 class="text-lg text-slate-400 cursor-pointer">BLUEBLACK.COM</h1>
+          <h5 class="text-sm">@ 2025</h5>
+        </div>
+        <!-- menu links -->
+        <div class="text-center md:text-start flex flex-col gap-3">
+          <h3 class="text-lg text-slate-400">Important Links</h3>
+          <a class="text-sm cursor-pointer">Home</a>
+          <a class="text-sm cursor-pointer">About</a>
+          <a class="text-sm cursor-pointer">Projects</a>
+          <a class="text-sm cursor-pointer">Our Team</a>
+          <a class="text-sm cursor-pointer">Contact us</a>
+        </div>
+        <!-- social media links -->
+        <div class="text-center md:text-end text-white">
+          <h3>Social Links</h3>
+          <div class="text-2xl md:text-3xl flex gap-6 justify-center items-center mt-3">
+            <i class="cursor-pointer hover:text-black transition all duration-300 fa-brands fa-square-facebook"></i>
+            <i class="cursor-pointer hover:text-black transition all duration-300 fa-brands fa-linkedin"></i>
+            <i class="cursor-pointer hover:text-black transition all duration-300 fa-brands fa-square-twitter"></i>
+            <i class="cursor-pointer hover:text-black transition all duration-300 fa-brands fa-square-github"></i>
+          </div>
+        </div>
+      </div>
+      <h5 class="text-center text-slate-500 text-sm tracking-widest mt-12">All rights reserved | &copy; 2025</h5>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
