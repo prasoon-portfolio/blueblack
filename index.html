@@ -19,7 +19,7 @@
     class="w-full h-screen font-sans text-white bg-gradient-to-r from-black to-blue-600"
   >
     <!-- HOME SECTION -->
-    <div class="relative w-full p-4 md:p-6">
+    <div id="home" class="relative w-full p-4 md:p-6">
       <!-- background image -->
       <div
         class="absolute inset-0 bg-no-repeat opacity-20"
@@ -40,11 +40,11 @@
           <div class="text-xl font-boad">
             <img src="./assets/logo.png" alt="logo" class="w-10" /></div>
           <div class="hidden md:flex gap-[30px]" id="menu">
-            <a class="hover:text-black" href="#">Home</a>
-            <a class="hover:text-black" href="#">About us</a>
-            <a class="hover:text-black" href="#">Projects</a>
-            <a class="hover:text-black" href="#">Out team</a>
-            <a class="hover:text-black" href="#">Contact</a>
+            <a class="hover:text-black" href="#home">Home</a>
+            <a class="hover:text-black" href="#about">About us</a>
+            <a class="hover:text-black" href="#projects">Projects</a>
+            <a class="hover:text-black" href="#team">Out team</a>
+            <a class="hover:text-black" href="#contact">Contact us</a>
           </div>
           <!-- menu icon -->
           <span class="md:hidden block" id="menu-icon"
@@ -102,7 +102,7 @@
     </div>
 
     <!-- ABOUT US SECTION -->
-    <section class="relative w-full p-4 md:p-6">
+    <section id="about" class="relative w-full p-4 md:p-6">
       <!-- background image -->
       <div class="absolute inset-0 bg-no-repeat opacity-20"></div>
 
@@ -148,7 +148,7 @@
     </section>
 
     <!-- PROJECTS SECTION -->
-    <section class="relative w-full p-4 md:p-6">
+    <section id="projects" class="relative w-full p-4 md:p-6">
       <!-- background image -->
       <div class="absolute inset-0 bg-no-repeat opacity-20"></div>
 
@@ -171,7 +171,7 @@
                 <h3 class="mb-6 text-2xl tracking-wider">Project 1</h3>
                 <p class="mb-6 text-sm tracking-wider text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptate recusandae aut amet illum doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, assumenda amet. Officiis aliquid a commodi ullam velit ipsam neque veritatis!</p>
                 <div class="w-full text-end mb-6">
-                  <button class="bg-black py-2 px-4 rounded text-gray-200">Read more</button>
+                  <button class="cursor-pointer hover:bg-white hover:text-black transition all duration-300 bg-black py-2 px-4 rounded text-gray-200">Read more</button>
                 </div>
               </div>
               </div>
@@ -203,7 +203,7 @@
                   <h3 class="mb-6 text-2xl tracking-wider">Project 2</h3>
                   <p class="mb-6 text-sm tracking-wider text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptate recusandae aut amet illum doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, assumenda amet. Officiis aliquid a commodi ullam velit ipsam neque veritatis!</p>
                   <div class="w-full text-end mb-6">
-                    <button class="bg-black py-2 px-4 rounded text-gray-200">Read more</button>
+                    <button class="cursor-pointer hover:bg-white hover:text-black transition all duration-300 bg-black py-2 px-4 rounded text-gray-200">Read more</button>
                   </div>
                 </div>
               </div>
@@ -221,7 +221,7 @@
                 <h3 class="mb-6 text-2xl tracking-wider">Project 3</h3>
                 <p class="mb-6 text-sm tracking-wider text-gray-200">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptate recusandae aut amet illum doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, assumenda amet. Officiis aliquid a commodi ullam velit ipsam neque veritatis!</p>
                 <div class="w-full text-end mb-6">
-                  <button class="bg-black py-2 px-4 rounded text-gray-200">Read more</button>
+                  <button class="cursor-pointer hover:bg-white hover:text-black transition all duration-300 bg-black py-2 px-4 rounded text-gray-200">Read more</button>
                 </div>
               </div>
               </div>
@@ -239,7 +239,7 @@
     </section>
 
     <!-- OUR TEAM SECTION -->
-    <section class="relative w-full p-4 md:p-6">
+    <section id="team" class="relative w-full p-4 md:p-6">
       <!-- background image -->
       <div class="absolute inset-0 bg-no-repeat opacity-20"></div>
 
@@ -256,8 +256,8 @@
               <img src="./assets/member01.jpg" alt="" class="mx-auto w-full h-full"/>
             </div>
             <div class="mt-6">
-              <h3 class="font-semibold tracking-wider text-xl">Name</h3>
-              <p class="tracking-widest font-extralight text-sm text-gray-300">designation</p>
+              <h3 class="font-semibold tracking-wider text-xl">D. Jeferson</h3>
+              <p class="tracking-widest font-extralight text-sm text-gray-300">Frontend Engineer</p>
               <div class="links flex justify-between px-2 text-3xl mt-12">
                 <div class="cursor-pointer hover:text-black transition duration-300 all"><i class="fa-brands fa-square-twitter"></i></div>
                 <div class="cursor-pointer hover:text-black transition duration-300 all"><i class="fa-brands fa-linkedin"></i></div>
@@ -272,8 +272,8 @@
               <img src="./assets/member02.jpg" alt="" class="mx-auto w-full h-full"/>
             </div>
             <div class="mt-6">
-              <h3 class="font-semibold tracking-wider text-xl">Name</h3>
-              <p class="tracking-widest font-extralight text-sm text-gray-300">designation</p>
+              <h3 class="font-semibold tracking-wider text-xl">K. Jordan</h3>
+              <p class="tracking-widest font-extralight text-sm text-gray-300">AI Engineer</p>
               <div class="links flex justify-between px-2 text-3xl mt-12">
                 <div class="cursor-pointer hover:text-black transition duration-300 all"><i class="fa-brands fa-square-twitter"></i></div>
                 <div class="cursor-pointer hover:text-black transition duration-300 all"><i class="fa-brands fa-linkedin"></i></div>
@@ -288,8 +288,8 @@
               <img src="./assets/member03.jpg" alt="" class="mx-auto w-full h-full"/>
             </div>
             <div class="mt-6">
-              <h3 class="font-semibold tracking-wider text-xl">Name</h3>
-              <p class="tracking-widest font-extralight text-sm text-gray-300">designation</p>
+              <h3 class="font-semibold tracking-wider text-xl">Janney</h3>
+              <p class="tracking-widest font-extralight text-sm text-gray-300">IT Consultant</p>
               <div class="links flex justify-between px-2 text-3xl mt-12">
                 <div class="cursor-pointer hover:text-black transition duration-300 all"><i class="fa-brands fa-square-twitter"></i></div>
                 <div class="cursor-pointer hover:text-black transition duration-300 all"><i class="fa-brands fa-linkedin"></i></div>
@@ -304,8 +304,8 @@
               <img src="./assets/member04.jpg" alt="" class="mx-auto w-full h-full"/>
             </div>
             <div class="mt-6">
-              <h3 class="font-semibold tracking-wider text-xl">Name</h3>
-              <p class="tracking-widest font-extralight text-sm text-gray-300">designation</p>
+              <h3 class="font-semibold tracking-wider text-xl">Prasoon</h3>
+              <p class="tracking-widest font-extralight text-sm text-gray-300">Full Stack Developer</p>
               <div class="links flex justify-between px-2 text-3xl mt-12">
                 <div class="cursor-pointer hover:text-black transition duration-300 all"><i class="fa-brands fa-square-twitter"></i></div>
                 <div class="cursor-pointer hover:text-black transition duration-300 all"><i class="fa-brands fa-linkedin"></i></div>
@@ -318,7 +318,7 @@
     </section>
 
     <!-- CONTACT US SECTION -->
-    <section class="relative w-full py-6 px-4 md:p-6">
+    <section id="contact" class="relative w-full py-6 px-4 md:p-6">
       <!-- background image -->
       <div class="absolute inset-0 bg-no-repeat opacity-20"></div>
 
@@ -358,11 +358,11 @@
         <!-- menu links -->
         <div class="text-center md:text-start flex flex-col gap-3">
           <h3 class="text-lg text-slate-400">Important Links</h3>
-          <a class="text-sm cursor-pointer">Home</a>
-          <a class="text-sm cursor-pointer">About</a>
-          <a class="text-sm cursor-pointer">Projects</a>
-          <a class="text-sm cursor-pointer">Our Team</a>
-          <a class="text-sm cursor-pointer">Contact us</a>
+          <a href="#home" class="text-sm cursor-pointer">Home</a>
+          <a href="#about" class="text-sm cursor-pointer">About</a>
+          <a href="#projects" class="text-sm cursor-pointer">Projects</a>
+          <a href="#team" class="text-sm cursor-pointer">Our Team</a>
+          <a href="#contact" class="text-sm cursor-pointer">Contact us</a>
         </div>
         <!-- social media links -->
         <div class="text-center md:text-end text-white">
